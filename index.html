@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatema</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <a href="#" class="logo">logo</a>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav_bar"> 
+            
+            <ul>
+            
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">Fatema</a></li>
+            <li><a href="">Upwork</a></li>
+            <li><a href="">Contact</a></li>
+            
+            </ul>
+      </nav>
+       
+    </header>
+
+    <section>
+        <img src="img/stars.png" alt="#" id="stars">
+        <img src="img/moon.png" alt="#" id="moon">
+        <img src="img/mountains_behind.png" alt="#" id="mountains_behind">
+        <h2 id="text">Fatema X Moonlight</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="img/mountains_front.png" alt="#" id="mountains_front">
+        
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>Upwork - Fatema Tuj Johra </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus, possimus alias quisquam eum rem error, similique molestias assumenda explicabo repudiandae nihil ad repellendus eius ab harum fugit, quod laboriosam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quibusdam nesciunt dolor veniam necessitatibus, eius officiis unde quo quasi error libero ratione assumenda, voluptate sequi! Porro tenetur consequuntur modi culpa.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta ea quia in nobis! Repudiandae vel et dicta cum deserunt obcaecati animi nostrum, consequatur veritatis, numquam fuga excepturi molestiae rem dolores.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis neque ipsa, sequi deleniti explicabo alias, ad voluptates itaque excepturi velit dolorem, vitae magnam quae modi perspiciatis beatae temporibus accusamus tenetur provident architecto. Asperiores nihil pariatur harum eveniet cumque expedita debitis et aliquam, reiciendis excepturi voluptate ducimus enim neque explicabo eligendi ex tempora, odio modi obcaecati facilis ad consequuntur! Doloribus illum nesciunt obcaecati esse rem non ea vitae possimus autem asperiores, omnis sapiente delectus velit voluptatum, eveniet, neque voluptatem fugit. Quis dolore maxime exercitationem laudantium fuga! Harum, modi praesentium adipisci dolore repellendus repudiandae rerum. Totam voluptatibus laboriosam doloribus inventore nesciunt.
+<br><br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus, possimus alias quisquam eum rem error, similique molestias assumenda explicabo repudiandae nihil ad repellendus eius ab harum fugit, quod laboriosam!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quibusdam nesciunt dolor veniam necessitatibus, eius officiis unde quo quasi error libero ratione assumenda, voluptate sequi! Porro tenetur consequuntur modi culpa. <br><br><br>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta ea quia in nobis! Repudiandae vel et dicta cum deserunt obcaecati animi nostrum, consequatur veritatis, numquam fuga excepturi molestiae rem dolores.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis neque ipsa, sequi deleniti explicabo alias, ad voluptates itaque excepturi velit dolorem, vitae magnam quae modi perspiciatis beatae temporibus accusamus tenetur provident architecto. Asperiores nihil pariatur harum eveniet cumque expedita debitis et aliquam, reiciendis excepturi voluptate ducimus enim neque explicabo eligendi ex tempora, odio modi obcaecati facilis ad consequuntur! Doloribus illum nesciunt obcaecati esse rem non ea vitae possimus autem asperiores, omnis sapiente delectus velit voluptatum, eveniet, neque voluptatem fugit. Quis dolore maxime exercitationem laudantium fuga! Harum, modi praesentium adipisci dolore repellendus repudiandae rerum. Totam voluptatibus laboriosam doloribus inventore nesciunt.
+</p>
+    </div>
+
+    <footer>
+        <span>© 2022 All Credit goes to | Fatema Tuj Johra</span>
+    </footer>
+
+
+
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.05 + 'px';
+            mountains_behind.style.top = value*0.5 + 'px';
+            mountains_front.style.top = value*0 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            text.style.marginTop = value*1.3 + 'px';
+            btn.style.marginTop = value*1.3 + 'px';
+            header.style.top = value*0.5 + 'px';
+        } )
+
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav_bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+
+</body>
+</html>
